@@ -6,7 +6,8 @@
   "scripts": {
     "start:prod": "NODE_ENV=production node ./src/server.js",
     "start:dev": "nodemon ./src/server.js",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
   },
   "keywords": [],
   "author": "",
@@ -19,8 +20,11 @@
   },
   "dependencies": {
     "@hapi/hapi": "^21.3.2",
+    "dotenv": "^16.4.7",
     "git": "^0.1.5",
     "joi": "^17.13.3",
-    "nanoid": "^3.1.20"
+    "nanoid": "^3.1.20",
+    "node-pg-migrate": "^7.9.0",
+    "pg": "^8.13.1"
   }
 }
